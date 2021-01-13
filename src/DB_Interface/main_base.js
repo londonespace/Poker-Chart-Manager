@@ -8,4 +8,6 @@ const baseConfig = {
   port: '5432'
 }
 
-export const base = new DatabaseAdapter(baseConfig);
+const base = new DatabaseAdapter(baseConfig);
+
+export { base as MAIN_BASE };

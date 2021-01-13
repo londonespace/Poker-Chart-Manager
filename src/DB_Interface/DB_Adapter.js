@@ -1,6 +1,6 @@
 import { Client } from 'pg';
 
-export default class DatabaseAdapter {
+class DatabaseAdapter {
   constructor(props) {
     this.client = new Client(props);
   }
@@ -23,4 +23,4 @@ export default class DatabaseAdapter {
   }
 }
 
-export { mainBase };
+export default DatabaseAdapter;
